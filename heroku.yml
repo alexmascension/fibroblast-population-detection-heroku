@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: cellxgene launch --host 0.0.0.0 --port $PORT joined_fb.h5ad
+  web: ls && cellxgene launch joined_fb.h5ad --host 0.0.0.0 --port $PORT --disable-annotations
